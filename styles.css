@@ -290,6 +290,14 @@ body {
   display: block;
 }
 
+.bug-image {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  pointer-events: none;
+  z-index: 5;
+}
+
 /* ---- Bug overrides: obvious, screenshot-visible only ---- */
 
 /* Layout & alignment */
