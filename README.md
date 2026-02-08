@@ -1,6 +1,6 @@
 # Bug Hunter
 
-A simple static web page that loads with a **random UI bug** each time—or sometimes no bug at all. Use it to practice spotting layout, visibility, and interaction issues.
+A simple static web page that loads with a **random UI bug** each time—or sometimes no bug at all. Use it to practice spotting layout and visibility issues—every bug can be found from a screenshot.
 
 ## Run locally
 
@@ -30,7 +30,7 @@ Append `?debug=1` to the URL to see which bug is active in the bottom-right corn
 
 ## Bug catalog
 
-Each load randomly applies one of these, or none:
+Each load randomly applies one of these, or none. **Every bug is visible in a static screenshot** (no hover, focus, or click required):
 
 | Bug ID | What’s wrong |
 |--------|----------------|
@@ -42,20 +42,14 @@ Each load randomly applies one of these, or none:
 | `centering-broken` | Hero and main content no longer centered. |
 | `grid-gap-zero` | Form/nav items have no gap. |
 | `max-width-gone` | Main content spans full viewport width. |
-| `sticky-broken` | Header doesn’t stick on scroll. |
 | `invisible-text` | Hero title same color as background. |
 | `low-contrast` | Body text very light on light background. |
-| `focus-ring-gone` | No visible focus outline (keyboard users). |
 | `placeholder-invisible` | Input placeholder invisible. |
 | `overflow-hidden` | Card body clipped, no scroll. |
 | `text-overflow-missing` | Long text doesn’t ellipsis. |
 | `scrollbar-hidden` | Scrollable area has no visible scrollbar. |
 | `wrong-z-index` | Footer overlaps content. |
 | `modal-behind` | Modal appears behind page. |
-| `dropdown-under` | Dropdown menu under adjacent content. |
-| `hover-broken` | Primary button has no hover state. |
-| `wrong-cursor` | Buttons/links show default cursor. |
-| `active-state-gone` | Button has no active/pressed state. |
 | `disabled-looks-enabled` | Disabled button looks clickable. |
 | `link-not-underlined` | Links look like body text. |
 | `font-size-tiny` | Form labels too small to read. |
@@ -65,7 +59,5 @@ Each load randomly applies one of these, or none:
 | `input-too-narrow` | Input field too narrow. |
 | `border-flash` | Card has loud extra border. |
 | `duplicate-content` | Hero title has ghost duplicate text. |
-| `animation-flicker` | Primary button flickers. |
-| `button-does-nothing` | Submit button doesn’t submit (JS). |
 
 No build step required. Plain HTML, CSS, and JavaScript.
