@@ -15,7 +15,6 @@
     'text-overflow-missing',
     'scrollbar-hidden',
     'wrong-z-index',
-    'modal-behind',
     'disabled-looks-enabled',
     'link-not-underlined',
     'font-size-tiny',

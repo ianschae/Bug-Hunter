@@ -49,7 +49,6 @@ Each load randomly applies one of these, or none. **Every bug is visible in a st
 | `text-overflow-missing` | Long text doesn’t ellipsis. |
 | `scrollbar-hidden` | Scrollable area has no visible scrollbar. |
 | `wrong-z-index` | Footer overlaps content. |
-| `modal-behind` | Modal appears behind page. |
 | `disabled-looks-enabled` | Disabled button looks clickable. |
 | `link-not-underlined` | Links look like body text. |
 | `font-size-tiny` | Form labels too small to read. |
