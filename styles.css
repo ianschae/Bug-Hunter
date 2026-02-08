@@ -221,9 +221,9 @@ body {
 }
 
 .modal {
+  display: none;
   position: fixed;
   inset: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(0,0,0,0.3);
@@ -386,6 +386,7 @@ body {
 }
 
 [data-bug="modal-behind"] .modal {
+  display: flex;
   z-index: -1;
 }
 
