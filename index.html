@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bug Hunter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="site-header">
+      <h1 class="site-title">Bug Hunter</h1>
+      <nav class="site-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <div class="dropdown">
+          <button type="button" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Menu</button>
+          <div class="dropdown-menu">
+            <a href="#item1">Item 1</a>
+            <a href="#item2">Item 2</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <h2 class="hero-title">Find the bug.</h2>
+        <p class="hero-subtitle">This page may load with a UI bug—or it might look perfectly fine. Refresh to get a new random state.</p>
+      </section>
+
+      <section class="card-section">
+        <article class="card">
+          <div class="card-body">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='120' viewBox='0 0 200 120'%3E%3Crect fill='%23637ee0' width='200' height='120'/%3E%3Ctext x='50%25' y='50%25' fill='white' text-anchor='middle' dy='.3em' font-size='14'%3EImage%3C/text%3E%3C/svg%3E" alt="" class="card-image">
+            <h3 class="card-title">Sign up</h3>
+            <p class="card-text">Enter your details below. This card has enough content that overflow and clipping bugs will be noticeable when present.</p>
+            <form class="signup-form" action="#" method="get">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Your name">
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary" disabled>Disabled</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+
+      <div class="modal" role="dialog" aria-modal="true" aria-label="Notice">
+        <div class="modal-content">
+          <p>This is a modal. It can appear behind content when the z-index bug is active.</p>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>&copy; Bug Hunter. <a href="#privacy" class="footer-link">Privacy</a></p>
+      </footer>
+    </main>
+  </div>
+  <div id="debug-badge" class="debug-badge" aria-hidden="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
