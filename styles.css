@@ -322,11 +322,6 @@ body {
   max-width: none;
 }
 
-[data-bug="sticky-broken"] .site-header {
-  position: relative;
-  top: auto;
-}
-
 /* Visibility & color */
 [data-bug="invisible-text"] .hero-title {
   color: transparent;
@@ -339,10 +334,6 @@ body {
 [data-bug="low-contrast"] .card-text,
 [data-bug="low-contrast"] .hero-subtitle {
   color: #e8e8e8;
-}
-
-[data-bug="focus-ring-gone"] *:focus {
-  outline: none !important;
 }
 
 [data-bug="placeholder-invisible"] .form-input::placeholder {
@@ -390,25 +381,7 @@ body {
   z-index: -1;
 }
 
-[data-bug="dropdown-under"] .dropdown-menu {
-  z-index: -1;
-}
-
-/* Interaction & feedback */
-[data-bug="hover-broken"] .btn-primary:hover {
-  background: #2563eb;
-}
-
-[data-bug="wrong-cursor"] .btn-primary,
-[data-bug="wrong-cursor"] .nav-link,
-[data-bug="wrong-cursor"] .footer-link {
-  cursor: default;
-}
-
-[data-bug="active-state-gone"] .btn-primary:active {
-  background: #2563eb;
-}
-
+/* Interaction & feedback (screenshot-visible: wrong appearance) */
 [data-bug="disabled-looks-enabled"] .btn-secondary:disabled,
 [data-bug="disabled-looks-enabled"] .btn-secondary {
   opacity: 1;
@@ -458,13 +431,4 @@ body {
 [data-bug="duplicate-content"] .hero-title::after {
   content: " Find the bug.";
   color: #999;
-}
-
-[data-bug="animation-flicker"] .btn-primary {
-  animation: flicker 0.5s ease-in-out infinite;
-}
-
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
 }

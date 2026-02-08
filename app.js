@@ -8,20 +8,14 @@
     'centering-broken',
     'grid-gap-zero',
     'max-width-gone',
-    'sticky-broken',
     'invisible-text',
     'low-contrast',
-    'focus-ring-gone',
     'placeholder-invisible',
     'overflow-hidden',
     'text-overflow-missing',
     'scrollbar-hidden',
     'wrong-z-index',
     'modal-behind',
-    'dropdown-under',
-    'hover-broken',
-    'wrong-cursor',
-    'active-state-gone',
     'disabled-looks-enabled',
     'link-not-underlined',
     'font-size-tiny',
@@ -30,9 +24,7 @@
     'image-stretched',
     'input-too-narrow',
     'border-flash',
-    'duplicate-content',
-    'animation-flicker',
-    'button-does-nothing'
+    'duplicate-content'
   ];
 
   function pickBug() {
@@ -43,15 +35,6 @@
   function init() {
     var bug = pickBug();
     document.documentElement.dataset.bug = bug;
-
-    if (bug === 'button-does-nothing') {
-      var btn = document.querySelector('.btn-primary');
-      if (btn) {
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-        });
-      }
-    }
 
     if (location.search.indexOf('debug=1') !== -1) {
       var badge = document.getElementById('debug-badge');
